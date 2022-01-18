@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Geekster</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <h1>Calculator Design Using HTML Layout</h1>
+    <div class="container">
+      <div class="header">Calculator</div>
+      <p id="value" type="calcs" class="result"></p>
+      <div class="first-row">
+        <input type="button" name="" onClick="clearAll('');" value="C" class="global">
+        <input type="button" name="" value="(" class="global">
+        <input type="button" name="" value=")" class="global">
+        <input type="button" name="" value="%" class="global">
+      </div>
+      <div class="second-row">
+        <input type="button" name="" onClick="concatNumber('7');" value="7" class="global">
+        <input type="button" name="" onClick="concatNumber('8');" value="8" class="global">
+        <input type="button" name="" onClick="concatNumber('9');" value="9" class="global">
+        <input type="button" name="" onClick="setOperator('/');" value="/" class="global">
+      </div>
+      <div class="third-row">
+        <input type="button" name="" onClick="concatNumber('4');" value="4" class="global">
+        <input type="button" name="" onClick="concatNumber('5');" value="5" class="global">
+        <input type="button" name="" onClick="concatNumber('6');" value="6" class="global">
+        <input type="button" name="" onClick="setOperator('*');" value="X" class="global">
+      </div>
+      <div class="fourth-row">
+        <input type="button" name="" onClick="concatNumber('1');" value="1" class="global">
+        <input type="button" name="" onClick="concatNumber('2');" value="2" class="global">
+        <input type="button" name="" value="3" onClick="concatNumber('3');" class="global">
+        <input type="button" name="" onClick="setOperator('-');" value="-" class="global">
+      </div>
+      <div class="conflict">
+        <div class="left">
+          <input type="button" name="" onClick="concatNumber('0');" value="0" class=" big">
+          <input type="button" name="" onClick="setOperator('.');" value="." class=" small">
+          <input type="button" name="" onClick="del('');" value="Del" class=" red small white-text top-margin">
+          <input type="button" name="" onClick="equals();" value="=" class=" green white-text big top-margin">
+        </div>
+        <div class="right">
+          <input type="button" name="" onClick="setOperator('+');" value="+" class="global grey plus">
+        </div>
+      </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
